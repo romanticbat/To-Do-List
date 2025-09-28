@@ -1,110 +1,119 @@
-To-Do-List
+# 📋 To-Do-List
 
-Uma aplicação simples de lista de tarefas ("to-do list"), com front-end e back-end, construída em JavaScript.
+Uma aplicação simples de lista de tarefas (*to-do list*), com **front-end** e **back-end**, construída em **JavaScript**.
 
-🧰 Estrutura do Projeto
+---
+
+## 🧰 Estrutura do Projeto
+
+```
 To-Do-List/
-├── backend/        # Servidor, lógica de API, banco de dados
+├── backend/        # Servidor, lógica da API, banco de dados
 ├── frontend/       # Interface de usuário (web)
 ├── .gitignore
 ├── package.json
 ├── package-lock.json
 ├── todo.db         # Banco de dados local (SQLite ou similar)
 └── README.md       # Documentação deste repositório
+```
 
-⚙ Tecnologias
+---
 
-Front-end: React (Create React App) 
-GitHub
+## ⚙ Tecnologias
 
-Back-end: JavaScript/Node.js (possivelmente com Express) 
-GitHub
+- **Front-end:** React (Create React App)  
+- **Back-end:** Node.js + JavaScript (possivelmente com Express)  
+- **Banco de dados local:** SQLite (`todo.db`)  
+- **Linguagem:** JavaScript
 
-Banco de dados local: arquivo todo.db 
-GitHub
+---
 
-🚀 Instalação e uso
-Pré-requisitos
+## 🚀 Instalação e uso
 
-Node.js instalado (versão compatível com o projeto)
+### Pré-requisitos
+- Node.js instalado (versão compatível com o projeto)  
+- npm ou yarn  
+- (Opcional) Git, para clonar o repositório
 
-npm ou yarn
+### Passos
 
-(Opcional) Git, para clonar o repositório
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/romanticbat/To-Do-List.git
+   cd To-Do-List
+   ```
 
-Passos
+2. Instale dependências (caso o projeto seja monolito):
+   ```bash
+   npm install
+   ```
 
-Clone o repositório
+   Se houver dependências separadas para **backend** e **frontend**, instale em cada pasta:
+   ```bash
+   cd backend
+   npm install
 
-git clone https://github.com/romanticbat/To-Do-List.git
-cd To-Do-List
+   cd ../frontend
+   npm install
+   ```
 
+3. Inicialize o back-end:
+   ```bash
+   cd backend
+   npm start
+   ```
+   *(ou conforme o script definido em `package.json` do backend)*
 
-Instale dependências
+4. Inicialize o front-end (em outro terminal):
+   ```bash
+   cd frontend
+   npm start
+   ```
+   Isso normalmente abre a interface em `http://localhost:3000`.
 
-npm install
+---
 
+## 🧩 Funcionalidades
 
-Se houver dependências separadas para frontend e backend, entre nas pastas correspondentes:
+- ✅ Adicionar novas tarefas  
+- ✅ Listar tarefas existentes  
+- ✅ Marcar tarefas como concluídas  
+- ✅ Remover tarefas  
+- ✅ Persistência em banco local (SQLite)
 
-cd backend
-npm install
+---
 
-cd ../frontend
-npm install
+## 📁 Scripts úteis
 
+No `package.json` principal ou nos `package.json` de cada pasta:
 
-Inicialize o back-end
+| Comando         | Descrição                                                        |
+|-----------------|------------------------------------------------------------------|
+| `npm start`     | Inicia o servidor ou a interface, dependendo de onde for rodado  |
+| `npm run build` | Gera a versão de produção do front-end                           |
+| `npm test`      | Executa testes (se houver)                                       |
 
-cd backend
-npm start
+---
 
+## 🔧 Possíveis melhorias
 
-(ou conforme o script definido em package.json)
+- [ ] Autenticação de usuário  
+- [ ] Sincronização com banco remoto ou nuvem  
+- [ ] Interface mais responsiva / mobile friendly  
+- [ ] Layout customizado e temas  
+- [ ] Adicionar filtros (tarefas concluídas / pendentes)  
+- [ ] Testes automatizados (unitários e de integração)  
 
-Inicialize o front-end
+---
 
-cd ../frontend
-npm start
+## 📜 Licença
 
+Este repositório **não possui uma licença especificada** (até onde consta).  
+Se desejar, adicione uma licença (por exemplo **MIT**, **Apache-2.0**, **GPL**) criando um arquivo `LICENSE`.
 
-Isso deve abrir a interface da aplicação no navegador, geralmente em http://localhost:3000 
-GitHub
+---
 
-🧩 Funcionalidades
+## ✉️ Autor
 
-Adicionar novas tarefas
-
-Listar tarefas existentes
-
-Marcar tarefas como concluídas
-
-Remover tarefas
-
-(Possivelmente) persistência em banco local
-
-📁 Scripts úteis
-
-No package.json principal ou nas pastas específicas:
-
-Comando	Descrição
-npm start	Inicia o servidor ou interface, dependendo de onde for executado
-npm run build	Gera versão de produção do front-end
-npm test	Executa testes (se houver)
-🔧 Possíveis melhorias
-
-Autenticação de usuário
-
-Sincronização com banco remoto ou nuvem
-
-Interface mais responsiva / mobile friendly
-
-Layout customizado
-
-Adicionar filtros (tarefas concluídas / pendentes)
-
-Testes automatizados (unitários, de integração)
-
-📜 Licença
-
-Este repositório não possui uma licença especificada (até onde consta). Se desejar, adicione uma (por exemplo MIT, GPL etc.), para deixar claro os termos de uso.
+- GitHub: [romanticbat](https://github.com/romanticbat)  
+- Sinta-se livre para abrir issues ou pull requests se quiser contribuir.
